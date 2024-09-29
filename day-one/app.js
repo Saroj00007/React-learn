@@ -35,11 +35,15 @@ import ReactDOM from "react-dom/client";
 //   )
 
 // jsx
+const tauko = (<b>hello</b>)
 
 const Title = () => {
   // this is a react element
-  return <h1 className="heading">i am jsx</h1>;
+ return <h1 className="heading">i am jsx</h1>;
 };
+ 
+ 
+
 
 var num = 7;
 const Headcomponent = () => {
@@ -48,8 +52,11 @@ const Headcomponent = () => {
       {/* {} = any type of js can be weitten here   */}
       {num}
       {/* { Title() }   */}
+      
 
-      {/* component composition */}
+       
+
+      {/* component composition */}  
       <Title />
 
       <h2> i am heading one</h2>

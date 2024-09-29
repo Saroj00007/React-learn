@@ -2,10 +2,10 @@
   "name": "test",
   "version": "1.0.0",
   "description": "",
-  "source": "./day-one/index.html",
+  
   "scripts": {
- "start": "parcel",
- "build":"parcel build"
+ "start": "parcel ./food-order/main.html",
+ "build":"parcel build main.html"
   },
   "keywords": [],
   "author": "",
