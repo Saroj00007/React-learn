@@ -2,7 +2,7 @@ export const CDN_LINK =  "https://media-assets.swiggy.com/swiggy/image/upload/fl
 
 export const LOGO_LINK = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIlOCGOHbBCxZXDhKQHpU2R9kBTewXI9siSg&s" ;
 
-export const reslink ="https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.5169014&lng=78.3428304"
+export const reslink ="https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9046136&lng=77.614948&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
  
 
 // export const resmenulink ="https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=19.0918606&lng=72.8825928&restaurantId=";

@@ -1,6 +1,6 @@
 import React , {lazy , Suspense} from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./components/Header";
+import Header  from "./components/Header";
 import Body from "./components/Body";
 // import About from "./components/About";
 // import ContactUs from "./components/ContactUs";
@@ -10,6 +10,10 @@ import Restrauntmenu from "./components/Restrauntmenu";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
+
+// lazy loading 
+// dynamic bundling 
+// on demand response
 
 const Grocery = lazy(()=>{
   return import("./components/Grocery")
@@ -24,11 +28,14 @@ const ContactUs = lazy(()=>{
 })
  
 
+
 const Applayout = () => {
+// const Head = Promotedheader(Header)
+
   return (
     <div className="app-layout">
       <Header />
-      <Outlet />
+       <Outlet />
     </div>
   );
 };
@@ -47,15 +54,15 @@ const appeouter = createBrowserRouter([
         },
         {
           path: "/about",
-          element:<Suspense><About /></Suspense>,
+          element:<Suspense fallback={<h1 className="text-4xl text-center">loading....</h1>}><About /></Suspense>,
         },
         {
           path: "/contactus",
-          element:<Suspense><ContactUs /></Suspense>,
+          element:<Suspense fallback={<h1 className="text-4xl text-center">loading....</h1>}><ContactUs /></Suspense>,
         },
         {
           path: "/Grocery",
-          element: <Suspense><Grocery /></Suspense>,
+          element: <Suspense fallback={<h1 className="text-4xl text-center">loading....</h1>}><Grocery /></Suspense>,
         },
         {
           path: "/restraunt/:resid",
